@@ -14,6 +14,6 @@ class CreateUsers < ActiveRecord::Migration[7.2]
       t.timestamps
     end
 
-    add_foreign_key :users, :roles, column :role_id
+    add_foreign_key :users, :roles, column: :role_id
   end
 end
